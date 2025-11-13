@@ -1,0 +1,180 @@
+.banniere {
+  position: relative;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+  background-image: url('image/Fond/arriere_plan_1.png');
+  background-size: cover;
+  background-position: center;
+  color: #f6f5f4;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #f6f5f4;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #E9BD8C;
+}
+
+.banniere-contenu {
+  padding-top: 80px;
+}
+
+.products {
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.product-card {
+  background-image: url('image/Fond/Fond_produit.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  overflow: hidden;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.product-info {
+  padding: 15px;
+}
+
+.info-icon {
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 22px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #ccc;
+  font-style: italic;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.promo-banner {
+  background-image: url('image/Fond/Fond_2.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.discover-section {
+  padding: 40px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.discover-nav {
+  margin-bottom: 30px;
+}
+
+.discover-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 15px;
+}
+
+.discover-nav a {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #555;
+  padding-bottom: 5px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.discover-nav a.active,
+.discover-nav a:hover {
+  color: #8c4a3b;
+  border-bottom: 2px solid #8c4a3b;
+}
+
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.discover-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.about-section {
+  background-image: url('image/Fond/Fond_3.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  text-align: center;
+  color: #f6f5f4;
+}
+
+.about-section h3 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 32px;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+}
+
+.about-section p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0 auto 20px auto;
+  max-width: 300px;
+}
+
+.about-section .cta-button {
+  margin-top: 0;
+}

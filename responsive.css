@@ -1,0 +1,127 @@
+@media (min-width: 1024px) {
+
+  header {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100px;
+    padding: 0 80px;
+  }
+
+  .logo {
+    width: 87px;
+    height: 99px;
+    margin-right: 30px;
+  }
+
+  nav {
+    margin-left: 20px;
+  }
+
+  nav a {
+    font-size: 18px;
+  }
+
+  .banniere {
+    padding: 20px 80px;
+    text-align: left;
+  }
+
+  .banniere-contenu {
+    padding-top: 150px;
+  }
+  
+  h1 {
+    font-size: 89px;
+  }
+  
+  h4 {
+    font-size: 29px;
+  }
+
+  .products {
+    padding: 80px;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
+
+  .product-card img {
+    height: 250px;
+  }
+  
+  .product-info h3 {
+    font-size: 20px;
+  }
+
+  .section-title {
+    font-size: 56px;
+    margin-bottom: 50px;
+  }
+
+  .promo-banner {
+    padding: 100px 80px;
+  }
+
+  .promo-banner h3 {
+    font-size: 36px;
+  }
+
+  .promo-banner p {
+    font-size: 18px;
+  }
+  
+  .discover-section {
+    padding: 80px;
+  }
+  
+  .discover-nav {
+    margin-bottom: 50px;
+  }
+  
+  .discover-nav ul {
+    gap: 20px 30px;
+  }
+  
+  .discover-nav a {
+    font-size: 18px;
+  }
+  
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .discover-grid img {
+    height: 300px;
+  }
+  
+  .about-section {
+    padding: 100px 80px;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .about-section h3 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 18px;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  
+  .about-section .cta-button {
+    font-size: 16px;
+    padding: 12px 28px;
+  }
+}

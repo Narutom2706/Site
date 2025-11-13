@@ -1,0 +1,66 @@
+.section-title {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 32px;
+  color: #333;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #8c4a3b;
+  color: #f6f5f4;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a05a2c;
+}
+
+.product-info .price {
+  font-size: 16px;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.product-info h3 {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.add-button {
+  display: block;
+  text-align: center;
+  background-color: #8c4a3b;
+  color: #f6f5f4;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  margin-top: 15px;
+}
+
+.add-button:hover {
+  background-color: #a05a2c;
+}
+
+.promo-banner h3 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 28px;
+  color: #8c4a3b;
+  margin-bottom: 10px;
+}
+
+.promo-banner p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}

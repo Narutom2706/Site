@@ -3,68 +3,154 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Keithston - Douceurs & Saveurs</title>
+  <title>Keithston</title>
   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@600&family=Sansita+Swashed:wght@400&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sansita+Swashed:wght@300..900&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-  
-  <link rel="icon" type="image/png" href="image/logo_café.png">
+
+  <link rel="stylesheet" href="base.css">
+  <link rel="stylesheet" href="layout.css">
+  <link rel="stylesheet" href="common.css">
+  <link rel="stylesheet" href="responsive.css">
+
+  <link rel="icon" type="image/png" href="image/Logo/logo_café.png">
 </head>
+
 <body>
+  <main>
 
-  <img src="image/arriere_plan_1.png" alt="Fond Café" class="bg-scroll">
+    <section class="banniere"> 
+      <header>
+        <img src="image/Logo/logo_svg.svg" alt="Logo Café Keithston" class="logo">
+        <nav>
+          <ul>
+            <li><a href="#" class="active">Accueil</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Services</a></li>
+          </ul>
+        </nav>
+      </header>
 
-  <div class="content">
-    
-    <header>
-      <img src="image/logo svg.svg" alt="Logo Café Keithston" class="logo">
-      
-      <nav>
+      <div class="banniere-contenu">
+        <h4>Café Délicieux</h4>
+        <h1>Douceurs &<br>Saveurs</h1>
+        <a href="#" class="cta-button">Commander</a>
+      </div>
+    </section>
+
+    <section class="products">
+      <h2 class="section-title">Nos Tops Produits</h2>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <img src="image/Produit/Produit_1.png" alt="Pain complet">
+          <div class="product-info">
+            <span class="price">40€</span>
+            <h3>Pain complet</h3>
+            <a href="#" class="add-button">Ajouter</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="image/Produit/Produit_2.png" alt="Pâtisserie feuilletée">
+          <div class="product-info">
+            <span class="price">40€</span>
+            <h3>Pâtisserie feuilletée</h3>
+            <a href="#" class="add-button">Ajouter</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="image/Produit/Produit_3.png" alt="Baguette de campagne">
+          <div class="product-info">
+            <span class="price">40€</span>
+            <h3>Baguette de campagne</h3>
+            <a href="#" class="add-button">Ajouter</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="image/Produit/Produit_4.png" alt="Miche de pain blanc">
+          <div class="product-info">
+            <span class="price">40€</span>
+            <h3>Miche de pain blanc</h3>
+            <a href="#" class="add-button">Ajouter</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="image/Produit/Produit_5.png" alt="Gâteau pâte feuilletée">
+          <div class="product-info">
+            <span class="price">40€</span>
+            <h3>Gâteau pâte feuilletée</h3>
+            <a href="#" class="add-button">Ajouter</a>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <img src="image/Produit/Produit_6.png" alt="Miche de pain complet">
+          <div class="product-info">
+            <span class="price">40€</span>
+            <h3>Miche de pain complet</h3>
+            <a href="#" class="add-button">Ajouter</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="promo-banner">
+      <h3>20% de Réduction sur la première commande</h3>
+      <p>Profitez de cette offre pour découvrir nos plus beaux délices !</p>
+      <a href="#" class="cta-button">En savoir plus</a>
+    </section>
+
+    <section class="discover-section">
+      <h2 class="section-title">Découvrir</h2>
+      <nav class="discover-nav">
         <ul>
-          <li><a href="#" class="active">Accueil</a></li>
-          <li><a href="#">Blog</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Services</a></li>
+          <li><a href="#" class="active">Gâteaux</a></li>
+          <li><a href="#">Muffins</a></li>
+          <li><a href="#">Croissant</a></li>
+          <li><a href="#">Pains</a></li>
+          <li><a href="#">Tartes</a></li>
         </ul>
       </nav>
-      
-      <div style="clear: both;"></div>
-    </header>
-    
-    <main>
-      <h4>Café Délicieux</h4>
-      <h1>Douceurs &<br> Saveurs</h1>
-      <a href="#" class="cta-button">Commander</a>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-    </main>
-    
-  </div>
 
+      <div class="discover-grid">
+        <img src="image/Gateau/Gateau_1.png" alt="Muffin myrtilles">
+        <img src="image/Gateau/Gateau_2.png" alt="Cheesecake fruits rouges">
+        <img src="image/Gateau/Gateau_3.png" alt="Tarte aux baies">
+        <img src="image/Gateau/Gateau_4.png" alt="Cake au citron">
+        <img src="image/Gateau/Gateau_5.png" alt="Gâteau chocolat framboise">
+        <img src="image/Gateau/Gateau_6.png" alt="Muffin chocolat crème">
+      </div>
+    </section>
+
+    <section class="about-section">
+      <h3>À propos</h3>
+      <p>Un café moderne qui respecte<br>
+        les recettes traditionnelles en<br>
+        vous proposant du "fait<br>
+        maison".</p>
+      <a href="#" class="cta-button">Lire plus</a>
+    </section>
+
+        <section class="discover-section">
+      <h2 class="section-title">Petits Plaisirs</h2>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="discover-grid">
+        <img src="image/Plaisirs/Plaisir_1.png" alt="Muffin myrtilles">
+        <img src="image/Plaisirs/Plaisir_2.png" alt="Cheesecake fruits rouges">
+        <img src="image/Plaisirs/Plaisir_3.png" alt="Tarte aux baies">
+      </div>
+    </section>
+  </main>
 </body>
-</html> 
+</html>
