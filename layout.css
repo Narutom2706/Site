@@ -33,12 +33,16 @@ nav li {
   margin: 0 10px;
 }
 
-nav a {
+nav a,
+.discover-nav a {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+nav a {
   color: #f6f5f4;
-  transition: color 0.3s ease;
 }
 
 nav a.active,
@@ -46,29 +50,64 @@ nav a:hover {
   color: #E9BD8C;
 }
 
+/* discover style */
+.discover-nav a {
+  color: #555;
+  padding-bottom: 5px;
+}
+
+.discover-nav a.active,
+.discover-nav a:hover {
+  color: #8c4a3b;
+  border-bottom: 2px solid #8c4a3b;
+}
+
 .banniere-contenu {
   padding-top: 80px;
 }
 
-.products {
+.products,
+.discover-section,
+.plaisirs-section {
   padding: 40px 20px;
   background-color: #fff;
+  text-align: center;
 }
 
-.product-grid {
+.product-grid,
+.discover-grid,
+.plaisirs-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
 .product-card {
+  background-image: none; 
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  position: relative;
+}
+
+.plaisir-card img,
+.discover-grid img {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* product card style (notament le fond de chaque produit ce qui permet d'en ajouter d'autre */
+
+.product-card {
   background-image: url('image/Fond/Fond_produit.png');
   background-size: cover;
   background-position: center;
-  border-radius: 10px;
   overflow: hidden;
   color: #fff;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   text-align: left;
 }
 
@@ -106,50 +145,9 @@ nav a:hover {
   text-align: center;
 }
 
-.discover-section {
-  padding: 40px 20px;
-  background-color: #fff;
-  text-align: center;
-}
-
-.discover-nav {
-  margin-bottom: 30px;
-}
-
-.discover-nav ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px 15px;
-}
-
-.discover-nav a {
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  color: #555;
-  padding-bottom: 5px;
-  transition: color 0.3s ease, border-bottom 0.3s ease;
-}
-
-.discover-nav a.active,
-.discover-nav a:hover {
-  color: #8c4a3b;
-  border-bottom: 2px solid #8c4a3b;
-}
-
-.discover-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 20px;
-}
-
 .discover-grid img {
-  width: 100%;
   height: 250px;
   object-fit: cover;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
 .about-section {
@@ -164,23 +162,166 @@ nav a:hover {
 .about-section h3 {
   font-family: "Sansita Swashed", cursive;
   font-size: 32px;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px;
   font-weight: 400;
 }
 
 .about-section p {
   font-size: 16px;
   line-height: 1.6;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 20px;
   max-width: 300px;
 }
 
-.about-section .cta-button {
-  margin-top: 0;
+.plaisir-card img {
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
 }
 
-.footer {
-  background-color: #333;
-  color: #f6f5f4;
-  padding: 40px 20px;
+.plaisir-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #333;
 }
+
+.plaisir-info h3,
+.plaisir-info .price {
+  font-size: 18px;
+  margin: 0;
+}
+
+footer {
+  background-image: url(image/Fond/fond_4.png);
+  background-size: cover;
+  background-position: center;
+  color: #f6f5f4;
+  padding: 40px 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-top-row {
+  display: none;
+}
+
+.footer-columns-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  padding-bottom: 40px;
+}
+
+.footer-col {
+  font-size: 15px;
+}
+
+.footer-col .footer-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0 0 20px;
+}
+
+.footer-col p,
+.footer-col a,
+.footer-col li {
+  color: #ccc;
+  line-height: 1.6;
+}
+
+.footer-col li {
+  margin-bottom: 12px;
+}
+
+.footer-col a {
+  transition: color 0.3s ease;
+}
+
+.footer-col a:hover,
+.news-list a:hover {
+  color: #E9BD8C;
+}
+
+.news-list li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-align: left;
+}
+
+.news-list img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.news-list div {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-list span {
+  font-size: 12px;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.news-list a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.9);
+  color: #251d1a;
+  font-size: 18px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #E9BD8C;
+  color: #fff;
+}
+
+.footer-social-mobile {
+  display: block;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0,0,0,0.2);
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaa;
+}
+
+
